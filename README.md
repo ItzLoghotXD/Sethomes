@@ -56,7 +56,7 @@ Simply place the downloaded jar into your server plugins folder.
 # 	Use %s as the seconds variable in the cooldown message.
 
 max-homes:
-  default: 0
+  default: 1
 max-homes-msg: §4You have reached the maximum amount of saved homes!
 tp-delay: 3
 tp-cooldown: 0
@@ -70,9 +70,9 @@ auto-update: true
 ```yaml
 max-homes:
   default: 1
-  free: 3
+  free: 1
   subscriber: 5
-  admin: 0
+  admin: 10
 ```
 
 # Change Log
