@@ -67,7 +67,7 @@ public final class Sethomes extends JavaPlugin {
         this.copyHomes(this.config, this.getHomes());
         if (!this.config.isSet("max-homes") || !this.config.isSet("max-homes-msg") || !this.config.isSet("tp-delay") || !this.config.isSet("tp-cooldown") || !this.config.isSet("tp-cancelOnMove") || !this.config.isSet("tp-cancelOnMove-msg") || !this.config.isSet("tp-cooldown-msg") || !this.config.isSet("auto-update")) {
             if (!this.config.isSet("max-homes")) {
-                this.config.set("max-homes.default", 0);
+                this.config.set("max-homes.default", 1);
             }
 
             if (!this.config.isSet("max-homes-msg")) {
