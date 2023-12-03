@@ -1,4 +1,4 @@
-# SetHomes
+# Sethomes
 A simple homes plugin with the ability to create, delete, and teleport to many different homes. Have the ability to control a blacklist of worlds in which players will be restricted from setting homes. Using the config you can control setting such as a maximum number of homes, teleport cooldown, teleport delay, and their respective messages that get display to the user.
 
 Please use the **branch selector** to switch versions.
