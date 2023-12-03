@@ -120,6 +120,7 @@ public final class Sethomes extends JavaPlugin {
         ((PluginCommand)Objects.requireNonNull(this.getCommand("uhome"))).setExecutor(new Updatehome(this));
         ((PluginCommand)Objects.requireNonNull(this.getCommand("uhome-of"))).setExecutor(new Updatehome(this));
         ((PluginCommand)Objects.requireNonNull(this.getCommand("setmax"))).setExecutor(new Setmax(this));
+        ((PluginCommand)Objects.requireNonNull(this.getCommand("help"))).setExecutor(new Help(this));
     }
 
     private boolean setupVaultPermissions() {
