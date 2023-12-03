@@ -33,30 +33,36 @@ commands:
     usage: /<command> <PlayerName> <HomeName>
     aliases: dho
   uhome:
-    description: Allows a player to update their home by home name
+    description: Allows a player to update their home by home name.
     usage: /<command> <HomeName> <HomeDescription>
     aliases: uh
   uhome-of:
-    description: Gives a player the ability to update any players home
+    description: Gives a player the ability to update any players home.
     usage: /<command> <PlayerName> <HomeName>
     aliases: uho
   strike:
     description: Strike fury into your enemies with your wand.
     usage: /<command>
   blacklist:
-    description: Blacklist of worlds to disallow home setting in
+    description: Blacklist of worlds to disallow home setting in.
     usage: /<command> <Add/Remove> <WorldName>
     aliases: bl
   setmax:
-    description: Set the max number of homes allowed for a group
+    description: Set the max number of homes allowed for a group.
     usage: /<command> <GroupName> <Amount>
     aliases: sm
+  help:
+    description: Lists the player all Commands and usage.
+    usage: /<command>
+    aliases: hp
 permissions:
   homes.*:
     description: Allows all commands from the Homes plugin to be run.
     default: op
     children:
       homes.sethome: true
+      homes.uhome: true
+      homes.delhome: true
       homes.strike: true
       homes.gethomes: true
       homes.config_bypass: true
@@ -65,16 +71,15 @@ permissions:
       homes.blacklist_remove: true
       homes.home-of: true
       homes.delhome-of: true
-      homes.delhome: true
-      homes.uhome: true
       homes.uhome-of: true
       homes.setmax: true
+      homes.help: true
   homes.strike:
     description: Allows a player to strike.
     default: false
   homes.sethome:
     description: Allows a player to set homes.
-    default: false
+    default: true
   homes.gethomes:
     description: Lists the homes for a specific player
     default: false
@@ -101,10 +106,13 @@ permissions:
     default: true
   homes.uhome:
     description: Allows the player to update their homes
-    default: false
+    default: true
   homes.uhome-of:
     description: Allows the player to update the home of another player
     default: false
   homes.setmax:
     description: Allows the player to set the maximum number of homes for a permission group
     default: false
+  homes.help:
+    description: Lists the player all Commands and usage
+    default: true
