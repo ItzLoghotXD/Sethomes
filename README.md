@@ -76,12 +76,7 @@ max-homes:
 ```
 
 # Change Log
-- Added support for Minecraft/Craftbukkit V1.16.5.
-- Added support for LuckPerms and Vault permission plugin
-- Made LuckPerms default permission plugin, and set Vault as a rollback before disabling all together
-- Changed colors, and layout of list homes message to be more readable
-- Fixed error, where SetHomes could not load without Vault
-- Added server log messages for permissions plugin hooking, and no perms plugin found
+- Added Help command for Default and OP groups
 
 # F.A.Q
 - **Q: How can I give players permission to set named homes?**
