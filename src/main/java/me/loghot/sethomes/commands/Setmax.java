@@ -16,7 +16,8 @@ public class Setmax implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getLabel().equalsIgnoreCase("setmax")) {
-            if (sender instanceof Player) {
+            if (!(sender instanceof Player)) {
+                Chatutils.notPlayerError(sender);
                 Player p = (Player)sender;
                 if (!p.hasPermission("homes.setmax")) {
                     Chatutils.permissionError(p);
